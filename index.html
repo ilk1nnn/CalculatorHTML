@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <section id="mycontainer" class="container">
+        <section id="mysection" class="calculator">
+            <form action="">
+                <section class="mydisplay">
+                    <input  id="mytextinput" type="text">
+                </section>
+                <section>
+                    <input class="symbolcolor" type="button" value="AC" style="color: #6D9886;" onclick="AC_Button()">
+                    <input class="symbolcolor" type="button" value="DE" style="color: #6D9886;" onclick="DE_Button()">
+                    <input class="symbolcolor" type="button" value="." style="color: #6D9886;" onclick="InputSymbols('.')">
+                    <input class="symbolcolor" type="button" value="/" style="color: #6D9886;" onclick="InputSymbols('/')">
+                </section>
+                <section>
+                    <input type="button" value="7" onclick="InputNumbers(7)">
+                    <input type="button" value="8" onclick="InputNumbers(8)">
+                    <input type="button" value="9" onclick="InputNumbers(9)">
+                    <input class="symbolcolor"  type="button" value="*" style="color: #6D9886;"  onclick="InputSymbols('*')">
+                </section>
+                <section>
+                    <input type="button" value="4" onclick="InputNumbers(4)">
+                    <input type="button" value="5" onclick="InputNumbers(5)">
+                    <input type="button" value="6" onclick="InputNumbers(6)">
+                    <input class="symbolcolor"  type="button" value="-" style="color: #6D9886;" onclick="InputSymbols('-')">
+                </section>
+                <section>
+                    <input type="button" value="1" onclick="InputNumbers(1)">
+                    <input type="button" value="2" onclick="InputNumbers(2)">
+                    <input type="button" value="3" onclick="InputNumbers(3)">
+                    <input class="symbolcolor"   type="button" value="+" style="color: #6D9886;"  onclick="InputSymbols('+')">
+                </section>
+                <section>
+                    <input type="button" value="00" onclick="InputSymbols('00')">
+                    <input type="button" value="0" onclick="InputNumbers(0)">
+                    <input class="symbolcolor"  id="modebutton" type="button" style="color: #6D9886;font-size: 18px;" value="Light" onclick="ChangeMode()" >
+                    <input class="symbolcolor"  type="button" value="=" onclick="EqualButton()" style="color: #6D9886;">
+                </section>
+            </form>
+        </section>
+    </section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
